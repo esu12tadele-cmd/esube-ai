@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#5b46e8" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Esube AI</title>
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo">E</div>
+        <div>
+          <h1>Esube AI</h1>
+          <p id="subtitle">Your bilingual personal assistant</p>
+        </div>
+      </div>
+      <button id="langBtn" class="ghost">አማ</button>
+    </header>
+
+    <section class="modebar">
+      <button class="mode active" data-mode="assistant">👤 <span id="assistantLabel">Assistant</span></button>
+      <button class="mode" data-mode="nursing">🩺 <span id="nursingLabel">Nursing Care Plan</span></button>
+    </section>
+
+    <section id="chat" class="chat" aria-live="polite">
+      <div class="bubble ai">
+        <strong id="welcomeTitle">Hello! I'm Esube AI.</strong>
+        <p id="welcomeText">Ask me anything, or select Nursing Care Plan to create a structured plan.</p>
+      </div>
+    </section>
+
+    <section class="composer">
+      <button id="micBtn" class="round" title="Speak">🎙️</button>
+      <textarea id="message" rows="2" placeholder="Type your message..."></textarea>
+      <button id="sendBtn" class="send">➤</button>
+    </section>
+
+    <p class="notice" id="notice">
+      Health answers are educational support and should be checked against clinical assessment and local protocols.
+    </p>
+  </main>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

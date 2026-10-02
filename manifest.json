@@ -1,0 +1,9 @@
+{
+  "name": "Esube AI",
+  "short_name": "Esube AI",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#5b46e8",
+  "description": "Bilingual personal assistant and nursing care-plan generator."
+}
