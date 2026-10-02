@@ -15,7 +15,7 @@ const __dirname = path.dirname(__filename);
 
 const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 const port = Number(process.env.PORT || 3000);
-const model = process.env.OPENAI_MODEL || "gpt-5.6-luna";
+const model = process.env.OPENAI_MODEL || "gpt-6-luna";
 
 const BASE_INSTRUCTIONS = `
 You are Esube AI, a warm, clear, bilingual personal assistant for the user.
